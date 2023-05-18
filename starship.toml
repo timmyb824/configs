@@ -112,6 +112,7 @@ symbol = "🐍 "
 python_binary = "python3"
 pyenv_prefix = "pyenv"
 disabled = false
+pyenv_version_name = true
 
 [ruby]
 format = "[$symbol($version )]($style)"
