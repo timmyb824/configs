@@ -81,7 +81,7 @@ disabled = true
 [hostname]
 ssh_only = true
 ssh_symbol = "🌐 "
-format = "<[$hostname]($style)>"
+format = "<[$hostname]($style)> "
 trim_at = "-"
 style = "bold dimmed white"
 disabled = false
@@ -94,8 +94,7 @@ detect_folders = ["!~/"]
 detect_files = ["config_k3s"]
 disabled = false
 # [kubernetes.context_aliases]
-# "arn:aws:eks:us-east-1:123456789000:cluster/qa-us-east-1-app" = "QA"
-
+# "arn:aws:eks:us-east-1:0123456789:cluster/qa-us-east-1-cse-app" = "QA"
 
 [memory_usage]
 format = "$symbol[${ram}( | ${swap})]($style) "
@@ -110,7 +109,7 @@ format = '[${symbol}${pyenv_prefix}(${version} )(\($virtualenv\) )]($style)'
 style = "bold green"
 symbol = "🐍 "
 python_binary = "python3"
-pyenv_prefix = "pyenv"
+pyenv_prefix = "pyenv-"
 disabled = false
 pyenv_version_name = true
 
@@ -143,4 +142,21 @@ disabled = false
 
 [vagrant]
 format = "[🚶 $version](bold white) "
+disabled = true
+
+[status]
+style = 'bg:blue'
+symbol = '🔴 '
+success_symbol = '🟢 SUCCESS'
+format = '[\[$symbol$common_meaning$signal_name$maybe_int\]]($style) '
+map_symbol = true
+disabled = true
+
+[localip]
+ssh_only = false
+format = '@[$localipv4](bold green) '
+disabled = false
+
+[container]
+format = '[$symbol \[$name\]]($style) '
 disabled = true
