@@ -1,0 +1,8 @@
+##############################################
+#  Packages installed via kubectl krew       #
+#  Created by: Timothy Bryant                #
+#  Last modified: 2023-11-16                 #
+##############################################
+PLUGIN  VERSION
+ctx     v0.9.5
+ns      v0.9.5

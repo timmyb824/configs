@@ -1,3 +1,8 @@
+
+// Configuration for https://hyper.is/
+// Created by: Timothy Bryant
+// Last update: 2023-11-16
+
 "use strict";
 // Future versions of Hyper may add additional config options,
 // which will not automatically be merged into this file.
@@ -27,7 +32,7 @@ module.exports = {
         // `'BEAM'` for |, `'UNDERLINE'` for _, `'BLOCK'` for █
         cursorShape: 'BLOCK',
         // set to `true` (without backticks and without quotes) for blinking cursor
-        cursorBlink: false,
+        cursorBlink: true,
         // color of the text
         foregroundColor: '#fff',
         // terminal background color
@@ -132,8 +137,8 @@ module.exports = {
         preserveCWD: true,
         // for advanced config flags please refer to https://hyper.is/#cfg
         hypercwd: {
-            initialWorkingDirectory: '~/DevOps-Personal/'
-          }
+          initialWorkingDirectory: '~/'
+        }
     },
     // a list of plugins to fetch and install from npm
     // format: [@org/]project[#version]
@@ -146,8 +151,18 @@ module.exports = {
         "hyper-search",
         "hyper-pane",
         "hyper-broadcast",
-        "hyper-savetext",
-        "hyper-active-tab"
+        "hyper-active-tab",
+        // "hyper-savetext",
+        // "hyperpower"
+        // "hyper-night-owl",
+        // "hyper-material-theme",
+        // "hyper-dracula",
+        // "hyper-electron-highlighter",
+        // "hyper-relaxed",
+        // "hyper-rose-pine",
+        // "hyper-whimsy",
+        // "hyper-firefox-devtools",
+        "hyper-one-dark",
     ],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here

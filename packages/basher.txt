@@ -1,0 +1,8 @@
+LuRsT/hr
+bashup/gitea-cli
+bltavares/kickstart
+dylanaraps/fff
+kdabir/has
+laurent22/rsync-time-backup
+lingtalfi/task-manager
+molovo/lumberjack

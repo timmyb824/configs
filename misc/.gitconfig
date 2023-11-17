@@ -1,0 +1,29 @@
+##############################################
+#  Configuration for git                     #
+#  Created by: Timothy Bryant                #
+#  Last modified: 2023-11-16                 #
+##############################################
+[user]
+    name = Tim Bryant
+    email = ${ZEMAIL} # ensubst
+
+[pager]
+    branch = false
+
+#[includeIf "gitdir:~/DevOps-Work/"]
+#    path = ~/DevOps-Work/.gitconfig
+
+[init]
+    defaultBranch = main
+
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+
+[core]
+    editor = nano
+
+[trim]
+	bases = develop,main

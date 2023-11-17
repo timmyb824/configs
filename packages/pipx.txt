@@ -1,0 +1,7 @@
+##########################################
+#  Packages installed via pipx           #
+#  Created by: Timothy Bryant            #
+#  Last modified: 2023-11-16             #
+##########################################
+poetry
+pyinfra

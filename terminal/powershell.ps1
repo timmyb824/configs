@@ -1,3 +1,9 @@
+##############################################
+#  Configuration for powershell              #
+#  Created by: Timothy Bryant                #
+#  Last modified: 2023-01-01                 #
+##############################################
+
 ################TERMINAL PROMPTS################
 # for using starship
 Invoke-Expression (&starship init powershell)
