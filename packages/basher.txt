@@ -6,3 +6,9 @@ kdabir/has
 laurent22/rsync-time-backup
 lingtalfi/task-manager
 molovo/lumberjack
+pforret/bumpkeys
+pforret/repeat
+pforret/shtext
+rauchg/wifi-password
+sdushantha/tmpmail
+sickill/bitpocket
